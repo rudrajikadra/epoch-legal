@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--
+  Epoch — Support
+  Published at https://rudrajikadra.github.io/epoch-legal/
+  This is the Support URL given to App Store Connect. It must stay reachable.
+  Update the "Last updated" date whenever the substance changes.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support · Epoch</title>
+<meta name="description" content="Help for Epoch — AI Reset Timer. Common questions, purchases, and how to reach us.">
+<style>
+  :root{
+    --canvas:#F4F1EA; --surface:#FFFFFF; --ink:#16151A; --muted:#5F5A64;
+    --accent:#8C1D2F; --brass:#7A6134; --hair:#DCD5C6; --plate:#FBF9F4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --canvas:#0A0A0C; --surface:#16151A; --ink:#F2EFE9; --muted:#8A8590;
+      --accent:#B32A3C; --brass:#B08D57; --hair:#2A2730; --plate:#101014;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--canvas); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding:0 20px 96px;
+  }
+  .wrap{max-width:720px; margin:0 auto}
+  header{padding:56px 0 32px; border-bottom:1px solid var(--hair); margin-bottom:36px}
+  .eyebrow{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:11px; letter-spacing:.18em; text-transform:uppercase;
+    color:var(--brass); margin:0 0 14px;
+  }
+  h1{font-size:clamp(30px,6vw,42px); line-height:1.12; margin:0 0 12px; letter-spacing:-.02em}
+  .dateline{color:var(--muted); font-size:14px; margin:0}
+  h2{
+    font-size:20px; letter-spacing:-.01em; margin:44px 0 12px;
+    padding-top:22px; border-top:1px solid var(--hair);
+  }
+  h3{font-size:16px; margin:26px 0 8px}
+  p,li{color:var(--ink)}
+  p{margin:0 0 14px}
+  ul{margin:0 0 14px; padding-left:22px}
+  li{margin:0 0 8px}
+  a{color:var(--accent); text-underline-offset:3px}
+  @media (prefers-color-scheme: dark){a{color:var(--brass)}}
+  strong{font-weight:600}
+  mark{
+    background:var(--accent); color:#fff; padding:1px 6px;
+    border-radius:4px; font-weight:600;
+  }
+  .lede{
+    background:var(--plate); border:1px solid var(--hair); border-left:3px solid var(--brass);
+    border-radius:12px; padding:18px 20px; margin:0 0 8px;
+  }
+  .lede p:last-child{margin-bottom:0}
+  table{width:100%; border-collapse:collapse; margin:0 0 16px; font-size:15px; display:block; overflow-x:auto}
+  th,td{text-align:left; padding:11px 12px; border-bottom:1px solid var(--hair); vertical-align:top}
+  th{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--brass); font-weight:600;
+  }
+  footer{margin-top:56px; padding-top:22px; border-top:1px solid var(--hair); color:var(--muted); font-size:14px}
+  footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="eyebrow">Epoch · AI Reset Timer</p>
+  <h1>Support</h1>
+  <p class="dateline">Last updated 6 September 2026</p>
+</header>
+
+<div class="lede">
+  <p><strong>Write to <a href="mailto:shapingedge.apps@gmail.com">shapingedge.apps@gmail.com</a>.</strong> A real person reads it, usually within two business days.</p>
+  <p>Most questions are answered below. The first one accounts for more mail than everything else combined.</p>
+</div>
+
+<h2>1. Why doesn't Epoch detect when I hit my limit?</h2>
+<p>Because no iPhone app can. iOS gives apps no way to observe what happens inside another company's app or website — there is no API, no background hook, and no screen-reading path. Any app claiming to watch your Claude or ChatGPT usage on iPhone alone is either asking you to sign in to that service, or syncing the numbers from a Mac.</p>
+<p>Epoch does neither. <strong>You tell it when your tool resets, and it makes that fact impossible to miss.</strong> That is the whole design, not a limitation we are working around, and it is why Epoch needs no sign-in, no API key and no account.</p>
+<p>To keep declaring fast, Epoch ships presets for common tools with their published reset schedules already filled in. Pick your tool, tap once, and the countdown starts.</p>
+
+<h2>2. Timers and alerts</h2>
+
+<h3>A timer reached zero but I wasn't told</h3>
+<ul>
+  <li>Check <strong>Settings › Notifications › Epoch</strong> on your iPhone and confirm alerts are allowed.</li>
+  <li>Each timer chooses its own alert style. A <strong>Notification</strong> is quiet and respects Focus and silent mode. An <strong>Alarm</strong> breaks through both. Open the timer to change which one it uses.</li>
+  <li>Alarms ask permission the first time you choose one on a specific timer, not when you first open the app. If you declined then, iOS Settings is where to grant it.</li>
+  <li>iOS caps how many alerts any one app can have scheduled at once. If you run a lot of timers with a lot of repeats, Epoch's Settings screen shows how many are currently armed against that budget, and the soonest ones are always the ones kept.</li>
+</ul>
+
+<h3>What does pausing actually do?</h3>
+<p>It holds <em>your countdown</em> and banks the time you had left, so resuming hands back the remainder rather than starting a fresh cycle.</p>
+<p><strong>It does not pause the provider's window.</strong> Anthropic's and OpenAI's cycles keep running whatever Epoch is doing — nothing on your phone can change that. Pause is for when you step away and want the timer to wait with you.</p>
+
+<h3>A preset's reset time looks wrong</h3>
+<p>Providers change their limits, sometimes quietly. Every preset carries a confidence label showing whether it was checked against official documentation or reported by the community, and one that has not been re-checked recently is marked as stale rather than presented as fact.</p>
+<p>The catalog is a public file that anyone can read and correct: <a href="https://rudrajikadra.github.io/epoch-catalog/">rudrajikadra.github.io/epoch-catalog</a>. Settings links to it directly. Corrections are welcome there, or by email.</p>
+<p>You can always override a preset: set any window on the dial, or give Epoch an exact date and time.</p>
+
+<h2>3. Purchases</h2>
+
+<h3>What is free, and what needs Epoch Pro?</h3>
+<table>
+  <tr><th>Free</th><th>Epoch Pro</th></tr>
+  <tr>
+    <td>
+      One timer, running as long as you like<br>
+      The reset alert<br>
+      Siri and Shortcuts for the timer you have<br>
+      The Obsidian theme
+    </td>
+    <td>
+      Unlimited timers<br>
+      Warning alerts, and alarms that break through silence<br>
+      Home Screen and Lock Screen widgets, every size<br>
+      Live Activities and the Dynamic Island<br>
+      Control Center and StandBy<br>
+      All three themes, and per-tool brand colors
+    </td>
+  </tr>
+</table>
+<p>Nothing is hidden while you are on the free tier. Every locked feature stays visible and stays tappable, so you can always see what you are not buying.</p>
+<p>Pro is offered as a monthly subscription, a yearly subscription with a free trial, or a single lifetime purchase. Current prices are shown in the App Store and inside the app.</p>
+
+<h3>I paid, but Pro isn't active</h3>
+<p>Open <strong>Settings</strong> in Epoch and tap <strong>Restore purchase</strong>. This works on a new iPhone, after reinstalling, and after a subscription renews. Make sure you are signed in to the same Apple Account that made the purchase.</p>
+<p>If it still does not activate, email us with the date of purchase and which product you bought, and we will sort it out.</p>
+
+<h3>How do I cancel or change a subscription?</h3>
+<p>Subscriptions are managed by Apple, not by us. Epoch's Settings screen has a <strong>Manage subscription</strong> link when you have one, or use <a href="https://apps.apple.com/account/subscriptions">apps.apple.com/account/subscriptions</a>.</p>
+<p>Cancel at least 24 hours before the period ends to avoid the next renewal. A lifetime purchase is a one-time payment and never renews.</p>
+
+<h3>Refunds</h3>
+<p>All purchases go through Apple, so refunds are Apple's to issue. Request one at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>. Tell us as well if something went wrong — it usually points at a bug worth fixing.</p>
+
+<h2>4. Devices and requirements</h2>
+<ul>
+  <li><strong>Epoch requires iOS 26 and runs on iPhone.</strong> There is no iPad, Mac or Apple Watch version yet.</li>
+  <li><strong>Timers do not sync between devices.</strong> They live on the iPhone that created them. They are included in your ordinary encrypted device backup, so restoring a backup or moving to a new iPhone keeps them.</li>
+  <li>Deleting the app deletes your timers. We hold no copy and cannot recover them.</li>
+</ul>
+
+<h2>5. Privacy, briefly</h2>
+<p>No account, no sign-in, no analytics, no ads and no tracking. <strong>Epoch cannot see your usage in any AI tool, and your timers never leave your device.</strong></p>
+<p>Two things do leave, and neither one is a timer: a purchase, handled by Apple and our payments provider using an anonymous identifier, and a periodic download of the public preset catalog, which sends nothing about you. The full detail is in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+<h2>6. Reporting a bug</h2>
+<p>Email <a href="mailto:shapingedge.apps@gmail.com">shapingedge.apps@gmail.com</a>. It helps enormously to include:</p>
+<ul>
+  <li>Your iPhone model and iOS version (Settings › General › About)</li>
+  <li>Epoch's version number, shown at the bottom of Epoch's Settings screen</li>
+  <li>What you did, what you expected, and what happened instead</li>
+  <li>A screenshot, if the problem is something you can see</li>
+</ul>
+
+<h2>7. Contact</h2>
+<p>Shaping Edge<br><a href="mailto:shapingedge.apps@gmail.com">shapingedge.apps@gmail.com</a></p>
+
+<footer>
+  <p>Epoch — AI Reset Timer · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
+  <p>Apple, App Store and AlarmKit are trademarks of Apple Inc. Other product and company names are trademarks of their respective owners and are used for identification only; Epoch is not affiliated with, endorsed by, or connected to any of them.</p>
+</footer>
+
+</div>
+</body>
+</html>
